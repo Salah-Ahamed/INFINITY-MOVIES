@@ -1,0 +1,21 @@
+body{
+    background-image: url("bg3.jpg");
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.center2 {
+    margin-left: 45% ;
+    font-size: larger;
+}
+
+h1{
+    text-align: center;
+    font-size: 50PX;
+}

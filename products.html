@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>movie products </title>
+  <meta name=“products” content="product collection ">
+  <link rel="stylesheet" href="mainstyleexternal.css">
+  <link rel="stylesheet" href="products page images/productspage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.comcss2?family=Poppis:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="products page images/products.js" async></script>
+</head>
+  
+  
+<body id="demo">
+    <div class="header">
+        <img class = "logo" src = "logo.png" alt="logo of the website">
+          <a class="account"href="login.html"></a>   
+          <div id="menu-nav">
+            <div id="navigation-bar">
+              <ul>
+                <li><a href="main.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="gallery.html"><i class="fa fa-film"></i><span>Gallery</span></a></li>
+                <li><a href="products.html"><i class="fa fa-shopping-bag"></i><span>Products</span></a></li>
+                <li><a href="favorite page.html"><i class="fa fa-heart"></i><span>Favourites</span></a></li>
+                <li><a href="about us.html"><i class="fa fa-users"></i> <span>About Us</span></a></li>
+                <li><a href="quiz.html"><i class="fa fa-users"></i> <span>Quiz</span></a></li> 
+              </ul>
+            </div> 
+          </div>
+      </div>
+
+    ​<button type="button" id="positionbtn1" value="Generate" class="myBtn" onclick="changeFontSize(this)"><i class="fa fa-search-plus"></i></button>
+    ​<button type="button" id="positionbtn2"  value="Generate"class="myBtn" onclick="changeFontSize(this)"><i class="fa fa-search-minus"></i></button>
+
+
+
+ 
+    <button type="button" class="cart2" id="positionbtn3" value="cart">
+        <span><i class=" fa fa-shopping-cart"></i></span>
+        <p>Cart<span id="cart-counter" >0</span></p>
+    </button>
+    
+    <div class="position4" value=>
+        <div class="form-popup" id="myForm">
+            <h2>cart</h2>
+            <div id=cartform>
+            
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">item</span>
+                <span class="cart-price cart-header cart-column"id="quantitycol1">price</span>
+                <span class="cart-quantity cart-header cart-column"id="pricecol">quantity</span>
+            </div>
+            
+
+            <div class="cart-items">
+                
+                </div>
+
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+                    <button  id="buy" onclick="location.href='products page images/checkout.html'">Buy now</button>
+
+                </div>
+            </div>    
+            <button type="button" id="cancel" onclick="closeForm">Close</button>
+        </div>
+    </div>
+        
+    <div class="dvds">
+    <img src="products page images/dvds.jpg" alt="background1">   
+        
+    <img  id="product2" src="products page images/frames.jpg" alt="background2">
+    </div>
+    <div class="centered">
+        
+      <div class="span">
+
+        <ul class="category">
+            <li><a href="#electronics">electronics and others</a></li>
+            <li><a href="#customized">customized products</a></li>
+            <li><a href="#movies">purchase HD movies</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+<!--electronics section -->	
+    
+    <div id="electronics"></div>	
+    <div class="container">
+
+        <img  id="product" src="products page images/chair.JPG" alt="chair image product">
+        
+        <h1> Get the featured product!!</h1>
+        <h2> vidaXL Black Artificial Leather 3-Seat Home Theater Recliner Sofa Lounge </h2>
+        <h2><b>$500</b></h2>
+        
+        <button class="cartbutton" id="1" onclick="clickaddtocart(this.id)" >add to cart</button>
+        <button  id="buy" onclick="location.href='products page images/checkout.html'">Buy now</button>
+    </div>
+	
+    <div id="words">
+        <h1>enjoy the movie with<br> 
+        the finest sound!! <br></h1>
+    </div>
+
+      
+    <img  id="product3" src="products page images/billeheadphones.JPG" alt="headphone image product">
+    <div id="container3">
+        <h1 id="item-title" >Beats Studio3 Wireless</h1>
+        <div class="list">
+            <ul>
+                <li>Active Noise Cancelling (ANC)</li>
+                <li>Up to 22 hours of listening time</li>
+                <li> Apple W1 Chip & Class 1 Wireless Bluetooth®</li>
+                <li>On‑ear controls</li>
+                <p id="item-price" > <b>$349.95</b></p>
+                <button class="cartbutton"  id="2" onclick="clickaddtocart(this.id)" >add to cart</button>
+                <button  id=buy onclick="location.href='products page images/checkout.html'" >Buy now</button>
+            </ul>  
+        </div>
+    </div>
+
+
+	
+	
+    <div class="tv">
+        
+    <img id="item-image" class="tv-img"  src="products page images/TV-Hero-Image-high.jpeg" alt="tv image product">
+    <h1 id="item-title" >Samsung 190cm 4K Ultra HD Smart LED LCD TV</h1>
+     <div class="list">
+        <ul>
+            <li><h3>4K UHD Resolution</h3></li>
+            <li><h3>Voice Assistant Control</h3></li>
+            <li><h3> Streaming Services</h3></li>
+        </ul>  
+        <h2 id="item-price" ><b>$1,361</b></h2>
+        <button class="cartbutton" id="3" onclick="clickaddtocart(this.id)">add to cart</button>
+        <button id="buy" onclick="location.href='products page images/checkout.html'">Buy now</button>  
+      </div>
+    </div>
+
+
+
+
+<!--customized products section -->
+	
+    <div id="customized"></div>
+    <div class="contain-image">
+     <img  id="item-image" class="spider3" src="products page images/spiderman hoodies.jpg" alt="spiderman hoodies product">
+     <img src="products page images/Current Wallpaperedit.PNG" alt="spiderman background">       
+        <div class="top-right">
+            <h1>sipdey time!!</h1>
+            <h2 id="item-title">Marvel Superhero Spiderman  Hoodie Black Mens </h2>
+            <h2 id="item-price">$58.99</h2>
+            <button class="cartbutton" id="4" onclick="clickaddtocart(this.id)">add to cart</button>
+            <button  id="buy" onclick="location.href='products page images/checkout.html'" >Buy now</button>
+        </div>
+    </div>
+
+        
+	
+	
+    <div class=" container2">
+        <img   class="harry-img" src="products page images/Harry Potter.JPG" alt=" background image4">
+        <img id="item-image" class="harry-image"src="products page images/handbag.JPG" alt="satchel harrypotter product">
+    </div>
+    
+    <div class="harry-price">
+        <h1 id="item-title">Harry Potter Hogwarts Satchel Purse Handbag</h1>
+        <h2 id="item-price">$ 49.99 </h2>
+        <button class="cartbutton" id="5" onclick="clickaddtocart(this.id)">add to cart</button>
+        <button onclick="location.href='products page images/checkout.html'" id="buy">Buy now</button>
+    </div>  
+        <img  class="minion" src="products page images/minion_break.JPG" alt="backgroundimage5" >
+        <img  id="item-image" class="minion-pic" src="products page images/minion_123.jpg" alt="minion ptoduct">
+
+    <div class="minion-textbox">
+        <h1 id="item-title"> minion stuart toy here for you!!</h1>
+        <h2 id="item-price"> $ 33</h2>
+        <button class="cartbutton" id="6" onclick="clickaddtocart(this.id)">add to cart</button>
+        <button onclick="location.href='products page images/checkout.html'" id="buy">Buy now</button>
+    </div>
+    
+<!--movies section -->
+	
+    <div id="movies"></div>
+       <div class="row"> 
+
+            <div class="polaroid image1">
+                <img  id="item-image" src="products page images/image1.JPG" alt="movieimage1">
+                <figcaption><h2 id="item-title">"1971 ultra hd"</h2></figcaption> 
+                <figcaption><h2 id="item-price">$5.00</h2></figcaption>     
+                <button class="cartbutton" id="7"onclick="clickaddtocart(this.id)">add to cart</button>
+                <button onclick="location.href='products page images/checkout.html'" id="buy">Buy now</button>
+            </div>   
+
+            <div class="polaroid image2" >
+                <img id="item-image" src="products page images/image2.JPG" alt="movieimage2">
+                <figcaption><h2 id="item-title">"joker ultra hd" </h2></figcaption>
+                <figcaption><h2 id="item-price">$5.00</h2></figcaption>   
+                <button class="cartbutton" id="8" onclick="clickaddtocart(this.id)">add to cart</button>
+                <button onclick="location.href='products page images/checkout.html'" id="buy">Buy now</button>
+            </div>
+            
+            <div class="polaroid image3" >
+                <img  id="item-image" src="products page images/image3.JPG" alt="movieimage3">
+                <figcaption><h2 id="item-title" >"Tenet ultra hd" </h2></figcaption>
+                <figcaption><h2 id="item-price">$5.00</h2></figcaption>  
+                <button class="cartbutton" id="9" onclick="clickaddtocart(this.id)">add to cart</button>
+                <button onclick="location.href='products page images/checkout.html'" id="buy">Buy now</button>
+            </div>
+    
+            <div class="polaroid image4" >
+                <img id="item-image" src="products page images/image4.JPEG"alt="movieimage4">
+                <figcaption><h2  id="item-title">"gemini hd" </h2></figcaption>
+                <figcaption><h2 id="item-price">$5.00</h2></figcaption> 
+                <button class="cartbutton" id="10" id="cartbutton" onclick="clickaddtocart(this.id)">add to cart</button>
+                <button onclick="location.href='products page images/checkout.html'" id="buy">Buy now</button>
+            </div>
+        
+            <div class="polaroid image5" >
+                <img id="item-image" src="products page images/image5.JPG"alt="movieimage5">
+                <figcaption><h2 id="item-title">"wonder woman(2017) hd" </h2></figcaption>
+                <figcaption><h2 id="item-price">$5.00</h2></figcaption> 
+                <button class="cartbutton" id="11" onclick="clickaddtocart(this.id)">add to cart</button>
+                <button onclick="location.href='products page images/checkout.html'"id="buy">Buy now</button>
+            </div>
+        
+            <div class="polaroid image6" >
+                <img  id="item-image" src="products page images/image6.JPG" alt="movieimage6">
+                <figcaption><h2 id="item-title" >"Jumanji 3 ultra hd" </h2></figcaption>
+                <figcaption><h2 id="item-price">$5.00</h2></figcaption> 
+                <button class="cartbutton" id="12" onclick="clickaddtocart(this.id)">add to cart</button>
+                <button onclick="location.href='products page images/checkout.html'"id="buy">Buy now</button>
+            </div>
+         
+            <div class="polaroid image7" >
+                <img id="item-image" src="products page images/image7.JPG" alt="movieimage7">
+                <figcaption><h2 id="item-title">"EMMA ultra hd" </h2></figcaption>
+                <figcaption><h2 id="item-price">$5.00</h2></figcaption> 
+                <button class="cartbutton" id="13" onclick="clickaddtocart(this.id)">add to cart</button>
+                <button onclick="location.href='products page images/checkout.html'"  id="buy">Buy now</button>
+            </div>
+            
+            <div class="polaroid image8" >
+                <img id="item-image" src="products page images/image8.jpg" alt="movieimage8">
+                <figcaption><h2 id="item-title" >" Get out ultra hd" </h2></figcaption>
+                <figcaption><h2 id="item-price">$5.00</h2></figcaption>
+                <button class="cartbutton" id="14" onclick="clickaddtocart(this.id)">add to cart</button>
+                <button onclick="location.href='products page images/checkout.html'"id="buy">Buy now</button>
+            </div>
+     
+            <div class="polaroid image9" >
+                <img id="item-image" src="products page images/image9.jpg" alt="movieimage9">
+                <figcaption><h2 id="item-title" >"Bigil ultra hd"</h2></figcaption>
+                <figcaption><h2 id="item-price">$5.00</h2></figcaption>
+                <button class="cartbutton" id="15" onclick="clickaddtocart(this.id)">add to cart</button>
+                <button onclick="location.href='products page images/checkout.html'"id="buy">Buy now</button>
+            </div>
+        </div>
+
+        <footer> 
+            <div class="link">
+          
+                <div class="logos">
+                  <a href="editor/editor student3.html">slide into the editor's page</a>
+                  <circle fill="currentColor" cx="56.1" cy="56.1" r="55">
+                  <a href="#" class="fa fa-facebook "></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                  </circle>
+                </div>       
+                      
+              </footer>
+  
+
+
+
+
+
+
+
+   </body>
+</html>

@@ -1,0 +1,7 @@
+#slidy-container { 
+  width: 22%; overflow: hidden; margin:auto;
+}
+
+img{
+	float: left;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz page</title>
+        <link rel="stylesheet" href="mainstyleexternal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="http://fonts.googleapis.comcss2?family=Poppis:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <style>
+     
+    </style>
+
+    <body>
+
+        <div class="header">
+            <img class = "logo" src = "logo.png" alt="logo of the page">
+          
+              <a class="account"href="login.html"> </a>
+           
+              <div id="menu-nav">
+                <div id="navigation-bar">
+                  <ul>
+                    <li><a href="main.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li><a href="gallery.html"><i class="fa fa-film"></i><span>Gallery</span></a></li>
+                    <li><a href="products.html"><i class="fa fa-shopping-bag"></i><span>Products</span></a></li>
+                    <li><a href="favorite page.html"><i class="fa fa-heart"></i><span>Favourites</span></a></li>
+                    <li><a href="about us.html"><i class="fa fa-users"></i> <span>About Us</span></a></li>
+                    <li><a href="quiz.html"><i class="fa fa-users"></i> <span>Quiz</span></a></li> 
+                  </ul>
+                </div> 
+              </div>
+          </div>
+          
+        <h2> Quiz</h2>
+
+        
+       
+        </div>
+
+        <script>
+            var gold = "Gold Badge";
+            var silver = "Silver Badge";        
+            var bronze = "Bronze Badge";
+
+            var q1 = ["Who plays the Prime Minister in Love Actually?", "In the Avengers movies, what is the name of Thor's hammer?", "What is the name of the second James Bond film?", "Who plays Jamie Fraser in Outlander?","Who directed Titanic, Avatar and The Terminator?"];
+            var ans = ["Hugh Grant","Mjolnir","From Russia With Love","Sam Heughan","James Cameron"];
+
+            var q ;
+            var answer;
+            var points = 0;
+
+            var i = 0
+            var j = 0 
+            var badge;
+            var y;
+
+            while (j < 5){
+
+                q = q1[i];
+                x = prompt(q);
+                
+                y =x.toLowerCase() === ans[i].toLowerCase();
+                if (y == true){
+
+                   points = points + 2; 
+                }
+                else{
+                    points = points -1;
+                } 
+                
+                i = i + 1;
+                j = j + 1;
+
+            }
+
+            if (points >= 7){
+                badge = gold;
+                alert("Congratulation! You have earned " + points +  " points with a " + badge+ ", please claim the points in your next purchase");
+            }
+            else if (points >= 4){
+                badge = silver;
+                alert("Congratulation! You have earned " + points +  " points with a " + badge+ ", please claim the points in your next purchase");
+            }
+            else if(points >= 0){
+                badge = bronze;
+                alert("Congratulation! You have earned " + points +  " point with a " + badge+ ", please claim the points in your next purchase");
+            }
+            else{
+                points = 0;
+                badge = "no badges !"
+                alert("OOPS! You have earned " + points +  " points and " + badge+ ", Better luck next time :)");
+            }
+
+            
+
+
+
+        </script>
+
+
+    </body>
+
+</html>

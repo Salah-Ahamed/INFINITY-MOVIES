@@ -1,0 +1,204 @@
+#myVideo {
+
+    right: 0;
+    bottom: 0;
+    min-width:100%; 
+    min-height:50vh;
+    margin-bottom:30px;
+  }
+
+.content {
+position:absolute;
+bottom: 0;
+background: rgba(0, 0, 0, 0.5);
+color: #f1f1f1;
+width: 100%;
+
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+  
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+#rowfornext {
+    display: flex;
+    
+    padding: 0 4px;
+   
+  }
+  
+  
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+flex: 25%;
+max-width: 50%;
+padding: 0 4px;
+}
+
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+}
+
+
+#quizbutton {
+    position:absolute;
+    top:2200px;
+    left:260px;
+    width: 200px;
+    text-align: center;
+    border: 10px solid gradient(linear, left top, left bottom, from(#21068c), to(purple)) fixed;
+    border-radius: 5px;
+    background-color:white ;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 900;
+
+  }
+
+  #quizbutton:hover{
+    background-image: linear-gradient(to right,#21068c , #7700b3  );
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    color:white;
+  }
+
+
+  
+   .blankarea{
+     width:94%;
+     float:right;
+     right:0px;
+     color: blanchedalmond;
+     background-color:rgb(0, 0, 0) ;
+     height:90vh;
+     text-align: center;
+     font-family:"Sofia", sans-serif ;
+     font-size:50px;
+     padding:20px;
+     font: normal 300 18px "Roboto", sans-serif;
+
+   }
+
+   #textblankarea{
+    
+     margin-top:200px;
+     position:absolute;
+     color: white;
+     font-size: 70px;
+   
+     
+    
+}
+
+.commentscontainer{
+    margin-top:60px;
+    height:100vh;
+     width:100%;
+     border: #000 solid;
+   
+     
+   }
+   
+   .commentsheading{
+     margin-top:40px;
+     width:50%;
+     background-color:black;
+     height:20%;
+     margin-top:0px auto;
+     text-align:center;
+     font-size:25px;
+     right:0px;
+     position:absolute;
+     color:white;
+   
+   }
+   
+   .commentheadingtext{
+     margin-top:20px;
+   }
+   
+
+   
+ 
+   
+   /* formrmmmmmmmmmmmmmmmmmm */
+   
+   
+   
+   
+   
+   #container{
+     
+     font-family:'Courier New', Courier, monospace;
+     width:100%;
+     background-color: rgba(0,0,0,1);
+     color:white;
+     margin-bottom:10px ;
+     
+     }
+   
+   
+   
+   #form1 {
+       
+       left:0px;
+       border-radius: 5px;
+       
+       position:absolute;
+       text-align: center;
+     }
+   
+     input{
+       margin-top:10px;
+       margin-bottom:20px;
+       background-color: transparent;
+      color: blanchedalmond;
+       border:0;
+       outline:0;
+       border-bottom: 2px solid gray;
+   
+     }
+    
+   
+     input[type=text], select, input[type=email],input[type=number] ,textarea{
+       width: 50%;
+       padding: 12px 20px;
+       
+       display: inline-block;
+       
+       border-radius: 4px;
+   
+     }
+   
+     input[type ="button"],input[type=reset] {
+       background-color: #FFCA28;
+       color: rgb(0, 0, 0);
+       padding: 14px 20px;
+       margin: 8px 0;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+     }
+       
+     input[type=button]:hover {
+       background-color: #212F3D;
+     }
+   
+     input[type=reset]:hover {
+      background-color: #212F3D;
+    }
+   

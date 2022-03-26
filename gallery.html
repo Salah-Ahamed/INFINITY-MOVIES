@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+    <head>
+        <title>Gallery Page</title>
+        <meta name="gallery" content="movie collection">
+        <link rel="stylesheet" href="gallery/style.css">
+        <link rel="stylesheet" href="mainstyleexternal.css">
+        <script src="gallery/gallery.js" async></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="http://fonts.googleapis.comcss2?family=Poppis:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <img class = "logo" src = "logo.png" alt="logo of the page">
+            <div class="account">   
+              <a href="login.html"></a></a>
+            </div>
+              <div id="menu-nav">
+                <div id="navigation-bar">
+                  <ul>
+                    <li><a href="main.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li><a href="gallery.html"><i class="fa fa-film"></i><span>Gallery</span></a></li>
+                    <li><a href="products.html"><i class="fa fa-shopping-bag"></i><span>Products</span></a></li>
+                    <li><a href="favorite page.html"><i class="fa fa-heart"></i><span>Favourites</span></a></li>
+                    <li><a href="about us.html"><i class="fa fa-users"></i> <span>About Us</span></a></li>
+                    <li><a href="quiz.html"><i class="fa fa-users"></i> <span>Quiz</span></a></li>
+                  </ul>
+                </div> 
+              </div>
+          </div>
+
+
+
+          <div class="slideshow">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="https://moviegalleri.net/wp-content/uploads/2020/01/Vijay-Master-Movie-Second-Look-Poster-HD.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://wallpapercave.com/wp/wp2398241.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://wallpaperaccess.com/full/1076854.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+          
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        
+
+
+
+        <div class="container">
+            <div class="col">
+                <h2>MASTER</h2>
+                <div class="caption">
+                    <p>An alcoholic professor is sent to a juvenile school, where he clashes with a gangster
+                        who uses the school children for criminal activities.</br></br>
+                        Director: Lokesh Kanagaraj</br>
+                        Stars: Joseph Vijay, Vijay Sethupathi, Malavika Mohanan</br>
+                        Genres: Action | Thriller</br>
+                        7.1/10 IMDb</br>
+                    </p>
+                    <button type="button">
+                        <a href="https://www.youtube.com/watch?v=UTiXQcrLlv4" >► Watch Trailer</a>
+                    </button>
+                </div>
+                <a target="" href="https://moviegalleri.net/wp-content/uploads/2020/01/Vijay-Master-Movie-Second-Look-Poster-HD.jpg">
+                    <img src="https://moviegalleri.net/wp-content/uploads/2020/01/Vijay-Master-Movie-Second-Look-Poster-HD.jpg" alt="master">
+
+                    <script>
+                        function load_image()
+                        {
+                            var image = new Image();
+                            image.src = "https://moviegalleri.net/wp-content/uploads/2020/01/Vijay-Master-Movie-Second-Look-Poster-HD.jpg";
+                            return image;
+                        }
+                    </script> 
+
+                </a>
+            </div>
+            <div class="col">
+                <h2>RIO 2</h2>
+                <div class="caption">
+                    <p>When Blu, a domesticated macaw from small-town Minnesota, 
+                        meets the fiercely independent Jewel, he takes off on an adventure to Rio de Janeiro with the bird of his dreams.</br></br>
+                        Director: Carlos Saldanha</br>
+                        Stars: Jesse Eisenberg, Anne Hathaway, George Lopez </br>
+                        Genres: Family | adventure</br>
+                        6.3/10 IMDb</br>
+                    </p>
+                    <button type="button">
+                        <a href="https://www.youtube.com/watch?v=JtP7zka5UI8">► Watch Trailer</a>
+                    </button>
+                </div>
+                <img src="http://img2.wikia.nocookie.net/__cb20131208030817/rio/images/f/f4/Rio_2_poster_it's_on_in_the_amazon.jpg" alt="rio-2">
+            </div>
+            <div class="col">
+                <h2>KGF</h2>
+                <div class="caption">
+                    <p>In the 1970s, a fierce rebel rises against brutal oppression and becomes the symbol of hope to legions of downtrodden people.</br></br>
+                        Director: Prashanth Neel</br>
+                        Stars: Yash, Sanjay Dutt, Raveena Tandon, Prakash Raj, Srinidhi Shetty</br>
+                        Genres: Action | Drama</br>
+                        8.2/10 IMDb</br>
+                    </p>
+                    <button type="button">
+                        <a href="https://www.youtube.com/watch?v=qXgF-iJ_ezE">► Watch Trailer</a>
+                    </button>
+                </div>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/869d6274284099.5c2a29444e565.png" alt="kgf-I">
+            </div>
+            <div class="col">
+                <h2>MAHARSHI</h2>
+                <div class="caption">
+                    <p>Rishi, a millionaire businessman, returns to his homeland, 
+                        where he becomes the champion of poor and downtrodden farmers.</br></br>
+                        Director: Vamshi Paidipally</br>
+                        Stars: Mahesh Babu, Allari Naresh, Patricia Pinto, Pooja Hedge</br>
+                        Genres: Romance | Drama</br>
+                        7.1/10 IMDb</br>
+                    </p>
+                    <button type="button">
+                        <a href="https://www.youtube.com/watch?v=ByjXIbg4hjw">► Watch Trailer</a>
+                    </button>
+                </div>
+                <img src="https://i.pinimg.com/736x/64/cc/b9/64ccb9e60f7b488701de2156f2a37c0d.jpg" alt="maharshi">
+            </div>
+            <div class="col">
+                <h2>MARAA</h2>
+                <div class="caption">
+                    <p>When Paaru sees a fairy tale she heard from a stranger as a child painted across the walls of a coastal town, 
+                        she goes in search of the man who painted it-Maara.</br></br>
+                        Stars: Madhavan, Shraddha Srinath, Shivada Nair</br>
+                        Genres: Drama</br>
+                        7.6/10 IMDb</br>
+                    </p>
+                    <button type="button">
+                        <a href="https://www.youtube.com/watch?v=Lv5KUKKwQEw">► Watch Trailer</a>
+                    </button>
+                </div>
+                <img src="https://miro.medium.com/max/2400/1*NaSvuvgjQWF_hoAVXEwM8Q.jpeg" alt="maraa">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="col">
+                <h2>The Croods: A New Age</h2>
+                <div class="caption">
+                    <p>The Croods, who are in search of a safer habitat, chance upon a walled lush green oasis, built by the more sophisticated Bettermans.
+                     They are welcomed at first, but when the Croods patriarch Grug eats a forbidden fruit, all hell breaks loose..</br></br>
+                        Director: Joel Crawford</br>
+                        Stars:  Nicolas Cage, Emma Stone, Ryan Reynolds and Catherine Keener </br>
+                        Genres: Family| Comedy</br>
+                        6.9/10 IMDb</br>
+                    </p>
+                    <button type="button">
+                        <a href="https://youtu.be/GkXeVIfbJOw" >► Watch Trailer</a>
+                    </button>
+                </div>
+                <a target="" href="gallery/gallery images/croods.jpg">
+                    <img src="gallery/gallery images/croods.jpg">
+                    <script>
+                        function load_image(hello)
+                        {
+                            var image = new Image();
+                            image.src = "croods.jpg";
+                            image = hello
+                            return hello;
+                        }
+                    </script> 
+
+                </a>
+            </div>
+            <div class="col">
+                <h2>Just Mercy</h2>
+                <div class="caption">
+                    <p>Based on the true story of activist lawyer Bryan Stevenson (Michael B. Jordan) who defends the wrongly condemned,
+                     while challenging prejudice against the poor.</br></br>
+                        Director: DESTIN DANIEL CRETTON</br>
+                        Stars: Michael B. Jordan,Brie Larson,Jamie Foxx</br>
+                        Genres:Action|Drama</br>
+                        7.0/10 IMDb</br>
+                    </p>
+                    <button type="button">
+                        <a href="https://youtu.be/GVQbeG5yW78">► Watch Trailer</a>
+                    </button>
+                </div>
+                <img src="gallery/gallery images/just mercy.jpg" alt="just mercy">
+            </div>
+            <div class="col">
+                <h2>Little Women</h2>
+                <div class="caption">
+                    <p>Marked by strong performances and endearing characters,
+                     ‘Little Women’ is a relevant retelling of a classic bestseller that is as poetic as it is real.</br></br>
+                        Director:Greta Gerwig
+                        Stars: Saoirse Ronan,Laura Dern,Emma Watson</br>
+                        Genres: Family | Drama</br>
+                        8.0/10 IMDb</br>
+                    </p>
+                    <button type="button">
+                        <a href="https://youtu.be/AST2-4db4ic">► Watch Trailer</a>
+                    </button>
+                </div>
+                <img src="gallery/gallery images/little women.jpg" alt="little women">
+            </div>
+            <div class="col">
+                <h2>Bad boys for life</h2>
+                <div class="caption">
+                    <p>This one carries forward the legacy of the bad boys franchise and the magic of its leading men ensure that third time’s a charm..</br></br>
+                        Director:Adil Ei Arbi</br>
+                        Stars: Will Smith,Martin Lawrence,Gabrielle Union</br>
+                        Genres: Action | Thriller</br>
+                        6.6/10 IMDb</br>
+                    </p>
+                    <button type="button">
+                        <a href="https://youtu.be/jKCj3XuPG8M">► Watch Trailer</a>
+                    </button>
+                </div>
+                <img src="gallery/gallery images/bad boys for life.jpg" alt="bad boys for life">
+            </div>
+            <div class="col">
+                <h2>Justice League</h2>
+                <div class="caption">
+                    <p>Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns 
+                    forces with Diana Prince with plans to recruit a team of metahumans to protect the world from
+                     an approaching threat of catastrophic proportions.</br></br>
+                        DirectorZack Snyder</br>
+                        Stars:  Henry Cavill, Ben Affleck, Gal Gadot </br>
+                        Genres: Action|Adventure|Fantasy</br>
+                        8.2/10 IMDb</br>
+                    </p>
+                    <button type="button">
+                        <a href="https://youtu.be/3cxixDgHUYw">► Watch Trailer</a>
+                    </button>
+                </div>
+                <img src="gallery/gallery images/justice league.jpg" alt="justice league">
+            </div>
+        </div>
+
+    <footer> 
+  <div class="link">
+
+      <div class="logos">
+        <a href="editor/editors  student1.html">slide into the editor's page</a>
+        <circle fill="currentColor" cx="56.1" cy="56.1" r="55">
+        <a href="#" class="fa fa-facebook "></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        </circle>
+      </div>       
+            
+    </footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+
+  text-align: center;
+
+}
+
+
+body{
+
+background: rgb(24,27,82);
+background: linear-gradient(90deg, rgba(24,27,82,1) 0%, rgba(106,44,136,1) 100%, rgba(42,0,57,1) 100%);
+font: normal 300 18px "Roboto", sans-serif;
+   }
+
+
+.imag1{
+   width:100%;
+   margin-bottom:20px ;
+}
+
+.text1{
+   color:white;
+   top:400px;
+   left:800px;
+   position:absolute;
+   font-size:80px ;
+
+}
+
+#circle {
+
+
+border-radius:50% 50% 50% 50%;
+width:500px;
+height:500px;
+top:1000px;
+position:absolute;
+margin-left:60px;
+filter:grayscale(100%);
+background:url("shazam2.jpeg");
+background-size:cover;
+background-blend-mode: multiply;
+overflow:hidden;
+
+
+}
+
+.vl {
+border-left: 15px solid purple;
+height: 300px;
+position: absolute;
+left: 42%;
+margin-left:40px;
+top: 1000px;
+}
+
+#second{
+color:white;
+top:1000px;
+left:800px;
+position:absolute;
+font-size:80px ;
+
+}
+
+.third{
+margin-top:20px;
+width:100%;
+height:97vh;
+background-size:cover;
+background-image:url("black5.jpg");
+
+margin-bottom:20px;
+
+
+}
+
+.third1{
+width:40%;
+left:800px;
+float:right;
+overflow:hidden;
+height:100%;
+border: solid 20px #000;
+background-image:url("salah2.jpeg");
+background-size:cover ;
+
+
+
+
+
+}
+.fourth{
+
+color:white;
+
+
+
+position:absolute;
+margin-top:50px;
+font-size:70px;
+margin-left:20px;
+
+}
+
+
+
+.circle2{
+background:url("kirthika.jpg");
+background-size: cover;
+
+width:500px;
+height:500px;
+top:2200px;
+position:absolute;
+margin-left:60px;
+filter:grayscale(100%);
+
+
+
+
+}
+.student3{
+
+
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+
+grid-template-columns: 400px 400px 400px;
+grid-gap: 50px;
+margin:20px;
+vertical-align:center;
+margin-bottom:0px;
+}
+
+.aboutcontain{
+background:black;
+width:100%;
+background-size:cover ;
+
+margin-top:20px;
+margin:0px auto;
+}
+.aboutcontain2{
+background-color:black;
+width:100%;
+background-size:cover ;
+margin-bottom:20px;
+margin-top:20px;
+
+}
+
+#circle2 {
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+
+grid-template-columns: 450px 400px 300px;
+grid-gap: 40px;
+margin:20px;
+vertical-align:center;
+margin-bottom:0px;
+
+
+
+}
+
+.lastcontain{
+background-color: black;
+width:400px;
+}
+
+#overlay {
+
+width:100%;
+height:20%;
+position: absolute;
+display:none;
+bottom: 0px;
+left: 0;
+right: 0;
+background-color:rgba(255,255,255,0.5);
+
+margin:0px auto;
+
+}
+
+
+
+#circle:hover #overlay{
+
+display:block;
+transition: .5s ease;
+
+}
+
+
+#overlay1{
+
+width:37%;
+padding:50px;
+
+position: absolute;
+display:none;
+background-color:rgba(255,255,255,0.5);
+height:30%;
+margin:0px auto;
+top:1970px;
+right:20px;
+
+
+
+}
+
+
+
+
+.third1:hover #overlay1{
+
+
+display:block;
+
+
+
+}
+
+#overlay2{
+padding:40px;
+display:none;
+background-color:rgba(255,255,255,0.5);
+height:22%;
+margin:0px auto;
+position:absolute;
+left:465px;
+top:2650px;
+width:405px;
+color:black;
+
+}
+
+
+.studentthree2:hover #overlay2{
+display:block;
+transition: .5s ease;
+
+}
+
+.studentthree2{
+background-image:url("kirthika1.jpg");
+background-repeat:no-repeat;
+}
+
+
+#overlay3{
+padding:40px;
+display:none;
+background-color:rgba(255,255,255,0.5);
+height:22%;
+margin:0px auto;
+position:absolute;
+left:20px;
+top:3450px;
+width:450px;
+color:black;
+
+}
+
+.student4{
+background-image:url("maryam3.jpeg");
+background-repeat:no-repeat;
+border:solid 10px white ;
+
+
+}
+
+.student4:hover #overlay3{
+display:block;
+transition:.5s ease;
+}
+
+
+* {box-sizing: border-box;}
+
+   

@@ -1,0 +1,118 @@
+body { 
+  background: url("newbg.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#container {
+    margin-left: 400px;
+    width: 40%;
+    background-color: #F1C50E;
+    color: rgb(0, 0, 0);
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+h1{
+  text-align: center;
+}
+
+
+#form1 {
+    border-radius: 5px;
+    background-color: #000000;
+    
+  }
+
+/*background-image: url("https://wallpaperaccess.com/full/2000109.jpg");*/
+
+  input[type=text], select, input[type=email],input[type=date] ,textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid rgb(83, 57, 1);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type ="button"] {
+    background-color: #000000;
+    color: rgb(236, 250, 252);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+    
+  input[type=button]:hover {
+    background-color: #009e77;
+  }
+
+
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color:#000d1a;
+    color:white;
+    } 
+        
+  .logos {
+    text-align:right;
+    color:white;
+            
+    }
+        
+  a{
+    color:white;    
+    }
+        
+  a:hover{
+    opacity:0.4;
+    }
+              
+  .link {
+    padding: 50px;
+    }
+         
+         
+          
+  .logos a{
+    padding: 10px;
+    }
+  
+  
+    ul.breadcrumb {
+      padding: 10px 16px;
+      list-style: none;
+      background-color: #eee;
+    }
+    
+     /*side by side  */
+    ul.breadcrumb li {
+      display: inline;
+      font-size: 18px;
+    }
+    /* / */
+    ul.breadcrumb li+li:before {
+      padding: 8px;
+      color: black;
+      content: "/\00a0";
+    }
+    
+    
+    ul.breadcrumb li a {
+      color: #a200ff;
+      text-decoration: none;
+    }
+    
+    
+    ul.breadcrumb li a:hover {
+      color: #a200ff;
+      text-decoration: underline;
+    }
+    
+  

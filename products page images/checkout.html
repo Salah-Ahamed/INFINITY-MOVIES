@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>movie products/checkout page </title>
+        <script src="store.js" async></script>
+        
+    </head>
+  
+    <style>
+    
+        body{
+            background:-webkit-gradient(linear, left top, left bottom, from(#21068c), to(purple)) fixed;
+            }
+
+        .heroimage{
+
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-columns: 400px 400px 300px;
+        margin:20px;
+        vertical-align:center;
+        margin-bottom:0px;
+        }
+        
+        .formfield * {
+        vertical-align: middle;
+        }
+        
+        h2{
+        text-align: center;
+        }
+        
+        .form-box{
+        width: 50%;
+        opacity:0.9;
+        padding:10px;
+        background-color:black;
+        color:white;
+        
+        text-align:center;
+        margin:0px auto;
+        
+        }
+        
+        .form {
+        position: absolute;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px;
+        margin-top:200px;
+       
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        }
+        
+        label{
+        border-radius:10px;
+        padding:10px;
+        display: inline-block;
+        width: 30%;
+        text-align:left;
+        font-size:20px;
+        margin-right : 10px;
+        border:3px solid purple;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06); 
+        }
+        
+        input,select{
+        padding:10px;
+        border-radius:10px;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        width:40%;
+        
+        
+        }
+        
+        
+        textarea {
+        width:40%;
+        resize: vertical;
+        padding:15px;
+        border-radius:15px;
+        border:0;
+        box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+        height:100px;
+        }
+
+        button {
+            margin-right:20px;
+            text-align: center;
+            border: 10px solid gradient(linear, left top, left bottom, from(#21068c), to(purple)) fixed;
+            border-radius: 5px;
+            background-color:white ;
+            color: black;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 900;
+
+            }
+        
+
+
+        button:hover {
+        background-image: linear-gradient(to right,#21068c , #7700b3  );
+        box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+        color:white;
+        }
+        
+        
+        button[type=submit]{
+        float:right;
+         }	
+
+        #demo{
+        font-size:15px;
+
+         }
+
+        .cart-quantity-input {
+        height: 34px;
+        width: 50px;
+        border-radius: 5px;
+        border: 1px solid #56CCF2;
+        background-color: #eee;
+        color: #333;
+        padding: 0;
+        text-align: center;
+        font-size: 1.2em;
+        margin-right: 25px;
+        }
+
+        .cart-row:last-child {
+            border-bottom: 1px solid black;
+        }
+
+        .cart-row:last-child .cart-column {
+            border: none;
+        }
+
+        .cart-total {
+            text-align: end;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .cart-total-title {
+            font-weight: bold;
+            font-size: 1.5em;
+        
+            margin-right: 20px;
+        }
+
+        .cart-total-price {
+        
+            font-size: 1.1em;
+        }
+
+        #cartform{        
+        margin:0px auto;
+        width: 50%;       
+        height:80vh;
+        overflow:auto;
+         }
+
+        .cart-column {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid black;
+            margin-right: 1.5em;
+            padding-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .cart-row {
+            display: flex;
+        }
+
+        .cart-item {
+            width: 45%;
+        }
+
+
+        .cart-price {
+            width: 20%;
+            font-size: 1.2em;
+        }   
+
+        .cart-quantity {
+            width: 35%;
+        }
+
+        .cart-item-title {
+        
+            margin-left: .5em;
+            font-size: 1.2em;
+        }
+
+        .cart-item-image {
+            width: 75px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+
+        
+
+        .btn-danger {
+            width:0px;
+            display:none;
+        }
+
+        #buy{
+            width:0px;
+            display:none;
+
+        }
+
+
+  ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ /*side by side  */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+/* / */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+
+ul.breadcrumb li a {
+  color: #a200ff;
+  text-decoration: none;
+}
+
+
+ul.breadcrumb li a:hover {
+  color: #a200ff;
+  text-decoration: underline;
+}
+
+
+    </style>
+<body>
+
+    <ul class="breadcrumb">
+        <li><a href="../products.html">products</a></li>
+        <li>checkout</li>
+    </ul>
+
+<!-- 3 images for the background in  grid  -->
+    <div class="heroimage">
+        <img src="marvelgif2.GIF" alt="image1">
+        <img src="gif.GIF" alt="image2">
+        <img src="marvelgif3.GIF" alt="image3">
+    </div>
+
+
+<!-- creating form  -->
+    <div class="form">
+        <div class="form-box" >
+            <form  name="checkoutform" onSubmit="return formValidation();" action="">
+                    <fieldset>
+                    <legend><h1>billing information</h1></legend>
+                    
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fnameform" name="fname" placeholder="your name"><br><br>
+                    <p id="demo"></p>
+                    
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="emailform" name="email"placeholder=".....@gmail.com" ><br><br>
+                    <p id="demo"></p>
+                    
+                    
+                    <label for="phone">Enter a phone number:</label>
+                    <input type="tel" id="phoneform" name="phone" placeholder="1234567890" ><br><br>
+                    <p id="demo"></p>
+                
+                    <p class="formfield">
+                    <label for="comment">address</label>
+                    <textarea  id="commentform">
+                    </textarea>
+                    </p>
+                    <p id="demo"></p>
+                    </fieldset>
+                    
+                    <fieldset>
+
+                    <legend><h1>your order summary</h1></legend>
+                            <div id="order">
+                                
+                            </div>
+                  
+                        <button   type="submit" value="Submit" onclick="validate()">place order</button>
+                    </fieldset>
+                </form>
+        </div>
+    </div>
+        
+
+		
+		
+		
+        <script>
+            var list = []//empty list
+           
+            //only run once the page Document Object Model (DOM) is ready for JavaScript code to execute. 
+           if (document.readyState == 'loading') {
+                document.addEventListener('DOMContentLoaded', ready)
+            } else {
+                ready()
+            } 
+
+            function ready(){
+
+            //bringing the cart items to orger summary div 
+            document.getElementById("order").innerHTML=sessionStorage.getItem("displaycart")
+            
+            }
+      
+           //this function validate all the input fields and gives alert messages 
+            function validate(){
+                
+                var emailfieldcheck,phonefieldcheck,addressfieldcheck
+
+                var namefieldcheck = document.getElementById('fnameform').value
+                emailfieldcheck = document.getElementById('emailform').value
+                phonefieldcheck = document.getElementById('phoneform')
+                addressfieldcheck =document.getElementById('commentform').value
+                console.log(addressfieldcheck);
+                
+
+                if(namefieldcheck==null || namefieldcheck ===""){
+                    alert("fill in your name");
+
+
+                }
+
+                if(emailfieldcheck==null || emailfieldcheck ===""){
+                    alert("fill in your email");
+
+
+                }
+
+                if(phonefieldcheck.value==null || phonefieldcheck.value ===""){
+                    alert("fill in your phone number");
+
+
+                }
+
+                if(addressfieldcheck.trim().length<1){
+                    alert("address is not filled or invalid,please try filling it with valid details");  
+                    
+                    }
+            else{
+                //if the fields are not null,this code is executed
+                phonenumber(phonefieldcheck);
+                var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+                var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+                //getting the three parameters to add to list (price,itemname and quantity)
+                for (var i = 0; i < cartRows.length; i++) {
+                var cartRow = cartRows[i]
+                var priceElement= cartRow.getElementsByClassName('cart-price')[0]
+                var itemnameElement= cartRow.getElementsByClassName('cart-item-title')[0]
+                var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+                var quantity = quantityElement.value
+                updatetheitems(itemnameElement.innerText,quantity,priceElement.innerText)
+                }
+                
+               //alert message after buying the products 
+                alert("Dear" +" "+ namefieldcheck +"  "+ "you have ordered"+ " "+ (list)+ " "+"with a total bill of"
+                +" "+ sessionStorage.getItem("pricecart"));  
+                          
+            }
+        }
+
+        //function created to update the list with  correct text format 
+        function updatetheitems(itemnames,quantity,priceitem){
+            
+            //adds the word and to the before last item (last cart item and varible)
+            if (list.length>1){
+                var endline="and"
+                var lastItem = list[list.length - 1]
+                 list.push(" "+endline)
+                var res=quantity+" "+"of" +" "+itemnames+" "+"that each cost"+" "+priceitem; 
+                 list.push(res) 
+            }
+            else{
+            var res=quantity+" "+"of" +" "+itemnames+" "+"that each cost"+" "+priceitem; 
+            list.push(res) 
+            }
+        }
+
+
+       // validates phone numbers with digits
+        function phonenumber(phonefieldcheck){
+                var phoneno = /^\d{10}$/;
+            if((phonefieldcheck.value.match(phoneno))){
+                
+            return true;
+                }
+            else
+                {
+                alert("phone number is not filled or invalid,please try filling it with valid details");
+                return false;
+                }
+
+        }
+
+        </script>
+    </body>
+</html>
+  

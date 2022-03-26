@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+ 
+  <title>Home page</title>
+  <meta name="home page" content="main page of the site">
+  <link rel="stylesheet" href="mainstyleexternal.css">
+    <link rel="stylesheet" href="main/main2.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.comcss2?family=Poppis:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="main/main.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+    
+</head>
+<body>
+
+    <div class="header">
+        <img class = "logo" src = "logo.png" alt="logo of the website">
+      
+          <a class="account"href="login.html"><b>Account</b> </a>
+       
+          <div id="menu-nav">
+            <div id="navigation-bar">
+              <ul>
+                <li><a href="main.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="gallery.html"><i class="fa fa-film"></i><span>Gallery</span></a></li>
+                <li><a href="products.html"><i class="fa fa-shopping-bag"></i><span>Products</span></a></li>
+                <li><a href="favorite page.html"><i class="fa fa-heart"></i><span>Favourites</span></a></li>
+                <li><a href="about us.html"><i class="fa fa-users"></i> <span>About Us</span></a></li>
+                <li><a href="quiz.html"><i class="fa fa-users"></i> <span>Quiz</span></a></li> 
+              </ul>
+            </div> 
+          </div>
+      </div>
+
+      <div class="header2">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      </div>
+
+      <video autoplay loop muted  id="myVideo">
+        <source src="main/1.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      
+      <button class="fa fa-angle-double-up" onclick="topFunction()" id="backtotop" title="Go to top">Top</button>
+
+
+      <div class="content">
+        <h1>welcome to infitiy</h1>
+        <h1>watch pokeman</h1>
+        <p>find out whats happens in his exciting jouney,when pokeman is found ,exciting adventure awaits</p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+      </div>
+
+      <div id="rowfornext"> 
+        <div class="column">
+          <img src="main/thor.gif" style="width:100%">
+          
+            <h1  id="textblankarea">Bored? take a quiz!</h1>
+            <button id="quizbutton" onclick="location.href='quiz.html'">quiz</button>
+        
+          
+        </div>
+    
+        <div class="column">
+          <img src="main/marvel.gif" style="width:100%">
+          <div class="blankarea">
+            <h1 >We <br>create<br>vision</h1>
+          </div>
+         
+          <img src="main/frozen.gif" style="width:100%">
+        </div> 
+        </div>
+
+         <!-- FORMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
+	  <div id = "container">
+        <h1>Speak your mind</h1><br>
+        <div class = "form1">
+      
+          <form id="myForm">
+              <label>First Name</label><br> 
+                <input class="forminput" type="text" name="fname" placeholder="Type your first name(mandotory)" required><br></label>   
+              <label>Last Name:<br> <input type="text" name="lname" placeholder="Type your last name(mandotory)" required><br></label> 
+              <label>Email Address:<br> <input type="email" name="email" placeholder="Type your email here(mandotory)" required> <br><br></label>
+              
+      
+            
+              <p>Rate us : "Bad", "Average", "Good"</p> 
+              <label>Rate Us: 
+                <input type="radio" name="r" value="Bad" required> 
+                <input type="radio" name="r" value="Average">
+                <input type="radio" name="r" value="Good"><br><br>
+                <span class="check"></span>
+              </label>
+            
+      
+              <label> Comment:<br> 
+               <textarea id="comment" rows="4" cols="50"></textarea><br><br>
+              </label> 
+      
+              <input type="reset" value="Reset form">
+              <input type="button" value="Submit"  onclick="show(this.form);" >
+            
+          </form>	
+        </div>
+    
+        </div>
+     
+     
+    
+      <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+    
+        
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+
+
+        
+        </script>
+
+      <footer> 
+        <div class="link">
+      
+            <div class="logos">
+              <a href="editor/editor student2.html">slide into the editor's page</a>
+              <circle fill="currentColor" cx="56.1" cy="56.1" r="55">
+              <a href="#" class="fa fa-facebook "></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+              </circle>
+            </div>       
+                  
+          </footer>
+
+
+
+
+</body>
+</html>
+ 

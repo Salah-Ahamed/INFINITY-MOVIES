@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <title>Favorite Page</title>
+		<meta name="favourite list page" content="favoutie collection ">
+		<link rel="stylesheet" href="favorite movie/movie.css">
+		<link rel="stylesheet" href="favorite movie/mainstyleexternal.css">
+		<link rel="stylesheet" href="favorite movie/image.css">
+		<link rel="stylesheet" href="favorite movie/newsletter.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="http://fonts.googleapis.comcss2?family=Poppis:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    </head>
+	
+	<div class="header">
+		<img class = "logo" src = "logo.png">
+		<div class="account">   
+			
+		</div>
+			<div id="menu-nav">
+				<div id="navigation-bar">
+					<ul>
+						<li><a href="main.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+						<li><a href="gallery.html"><i class="fa fa-film"></i><span>Gallery</span></a></li>
+						<li><a href="products.html"><i class="fa fa-shopping-bag"></i><span>Products</span></a></li>
+						<li><a href="favorite page.html"><i class="fa fa-heart"></i><span>Favourites</span></a></li>
+						<li><a href="about us.html"><i class="fa fa-users"></i> <span>About Us</span></a></li>
+						<li><a href="quiz.html"><i class="fa fa-users"></i> <span>Quiz</span></a></li> 
+					</ul>
+				</div> 
+			</div>
+	</div>
+	
+  
+ 
+ 
+	<div id="pop_corn_container"></div>
+
+	<script>
+	const container = document.querySelector('#pop_corn_container')
+	var animation_length = 5 //speed kernals fall
+
+	function createPopcorn() {
+	  var p = document.createElement('div')
+	  p.className = 'dot'
+	  // pick random size between 25-60
+	  var scale = (Math.random()*35) + 25 
+	  p.style.width = scale + 'px'
+	  p.style.height = scale + 'px'
+	  p.style.left = Math.random()*(window.innerWidth - 35) + 'px'
+	  p.style.top = Math.random()*(window.innerHeight*.5) + 'px'
+	  p.style.animation = 'pop '+animation_length+'s linear forwards'
+	  container.appendChild(p)
+
+	  //remove excess kernals
+	  setTimeout(function(){
+		var pop = document.querySelector('.dot')
+		pop.remove()
+	  },1000*animation_length)
+
+	  //create kernal every second
+	  setTimeout(createPopcorn, 1000)
+	}
+	createPopcorn()
+	</script>
+	<body>
+		<div class="left">
+		<form><h6>CHANGE BACKGROUND COLOR: </h6> 
+			<select name="colors" id="colors" onchange="color()">
+			<option value="FFFFFF" selected="select">White</option>
+			<option value="000000">Black</option>
+			<option value="FF0400">Red</option>
+			<option value="FFA500">Orange</option>
+			<option value="EFE800">Yellow</option>
+			<option value="05EF00">Green</option>
+			<option value="0206FF">Blue</option>
+			<option value="800000">Maroon</option>
+			<option value="FF00FF">Magenta</option>
+			<option value="00FFFF">Cyan</option>
+			<option value="808080">Gray</option>
+			<option value="2e8b57 ">Sea Green</option>
+			<option value="d2691e">Chocolate</option>
+			<option value="FFD700">Gold</option>
+			<option value="C0C0C0">Silver</option>
+			</select>
+		 </form>
+  
+		 <script>
+		  function color() {
+			  var color = document.getElementById("colors").value; // cached
+			document.bgColor = color;
+			}
+		 </script>
+		  
+		 <script type="text/javascript">
+			  function updateTextColour(value) {
+					document.body.style.color = '#' + value;
+				 }
+		 </script>
+		
+		 
+		 <form><h6>CHANGE FONT COLOR: </h6>
+            <select name="background" size="1" onChange="updateTextColour(this.value)">
+                <option value="000000">Black</option>
+                <option value="FF0400">Red</option>
+				<option value="FFA500">Orange</option>
+                <option value="EFE800">Yellow</option>
+                <option value="05EF00">Green</option>
+                <option value="0206FF">Blue</option>
+				<option value="800000">Maroon</option>
+				<option value="FF00FF">Magenta</option>
+				<option value="00FFFF">Cyan</option>
+				<option value="808080">Gray</option>
+				<option value="2e8b57 ">Sea Green</option>
+				<option value="d2691e">Chocolate</option>
+				<option value="FFD700">Gold</option>
+				<option value="C0C0C0">Silver</option>
+                <option value="FFFFFF" selected>White</option>
+            </select>
+        </form>
+		</div>
+		
+		
+		
+		<div id="slidy-container">
+		  <figure id="slidy">
+			<img src="favorite movie/work_it.jpg" alt="work-it_movie" style="width:20">
+			<img src="favorite movie/extraction.jpg" alt="extraction_movie" style="width:20">
+			<img src="favorite movie/alone.jpg" alt="alone_movie" style="width:10%">
+			<img src="favorite movie/kgf.jpeg" alt="kgf" style="width:10">
+			<img src="favorite movie/alive.jpg" alt="#alive" style="width:15">
+		  </figure>
+		</div>
+		<script src=" favorite movie/image.js"></script>
+		
+		
+		<h1> Favorite Movies </h1>	
+		
+		
+		
+		<div class="center">
+		<button class="button" onclick="FavoriteMovies()">Click Me</button>
+		</div>
+		
+		<br>
+		
+
+        <p id="demo"></p>
+		
+        <script>
+		function FavoriteMovies(){
+            function StringToXMLDom(sXML) {
+                    var xmlDoc=null;
+                    
+                    if (window.DOMParser) {
+                        parser=new DOMParser();
+                        xmlDoc=parser.parseFromString(sXML,"text/xml");
+                    } else { // Internet Explorer
+                        xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+                        xmlDoc.async="false";
+                        xmlDoc.loadXML(sXML);
+                    }
+                    
+                    return xmlDoc;
+                }
+				var XMLArray =   '<FAVMOVIES>' +
+
+									'<MOVIE>' +
+										'<TITLE>Extraction</TITLE>' +
+										'<GENRE>Action-Thriller</GENRE>' +
+										'<DIRECTOR>Sam Hargrave</DIRECTOR>' +
+										'<RUNNING-TIME> 117 MINUTES </RUNNING-TIME>' +
+										'<YEAR>2020</YEAR>' +
+									'</MOVIE>' +
+									
+									'<MOVIE>' +
+										'<TITLE>Alone</TITLE>' +
+										'<GENRE>Horror</GENRE>' +
+										'<DIRECTOR>Johnny Martin</DIRECTOR>' +
+										'<RUNNING-TIME>92 MINUTES</RUNNING-TIME>' +
+										'<YEAR>2020</YEAR>' +
+									'</MOVIE>' +
+							
+									'<MOVIE>' +
+										'<TITLE> K.G.F: Chapter 1</TITLE>' +
+										'<GENRE>Action</GENRE>' +
+										'<DIRECTOR>Prashanth Neel</DIRECTOR>' +
+										'<RUNNING-TIME>155 MINUTES</RUNNING-TIME>' +
+										'<YEAR>2018</YEAR>' +
+									'</MOVIE>' +
+							
+									'<MOVIE>' +
+										'<TITLE>The Invisible Man</TITLE>' +
+										'<GENRE>Horror</GENRE>' +
+										'<DIRECTOR>Leigh Whannell</DIRECTOR>' +
+										'<RUNNING-TIME>124 MINUTES</RUNNING-TIME>' +
+										'<YEAR>2020</YEAR>' +
+									'</MOVIE>' +
+									
+									'<MOVIE>' +
+										'<TITLE># Alive</TITLE>' +
+										'<GENRE>Horror</GENRE>' +
+										'<DIRECTOR>Cho Il-hyung</DIRECTOR>' +
+										'<RUNNING-TIME>99 MINUTES</RUNNING-TIME>' +
+										'<YEAR>2020</YEAR>' +
+								
+									'</MOVIE>' +
+							
+									'<MOVIE>' +
+										'<TITLE>6 Underground</TITLE>' +
+										'<GENRE>Action</GENRE>' +
+										'<DIRECTOR>Michael Bay</DIRECTOR>' +
+										'<RUNNING-TIME>128 MINUTES</RUNNING-TIME>' +
+										'<YEAR>2019</YEAR>' +
+									'</MOVIE>' +
+							
+									'<MOVIE>' +
+										'<TITLE>Jumanji: The Next Level</TITLE>' +
+										'<GENRE>Adventure-Comedy</GENRE>' +
+										'<DIRECTOR>Jake Kasdan</DIRECTOR>' +
+										'<RUNNING-TIME>123 MINUTES</RUNNING-TIME>' +
+										'<YEAR>2019</YEAR>' +
+									'</MOVIE>' +
+							
+									'<MOVIE>' +
+										'<TITLE>Guru</TITLE>' +
+										'<GENRE>Drama</GENRE>' +
+										'<DIRECTOR>Mani Ratnam </DIRECTOR>' +
+										'<RUNNING-TIME>162 MINUTES</RUNNING-TIME>' +
+										'<YEAR>2007</YEAR>' +
+									'</MOVIE>' +
+							
+									'<MOVIE>' +
+										'<TITLE>Psycho</TITLE>' +
+										'<GENRE>Thriller</GENRE>' +
+										'<DIRECTOR>Mysskin </DIRECTOR>' +
+										'<RUNNING-TIME>144 MINUTES</RUNNING-TIME>' +
+										'<YEAR>2020</YEAR>' +
+									'</MOVIE>' +
+							
+							
+									'<MOVIE>' +
+										'<TITLE> Work It</TITLE>' +
+										'<GENRE>Comedy</GENRE>' +
+										'<DIRECTOR>Laura Keys </DIRECTOR>' +
+										'<RUNNING-TIME>93 MINUTES</RUNNING-TIME>' +
+										'<YEAR>2020</YEAR>' +
+									'</MOVIE>' +
+								
+									'<MOVIE>' +
+										'<TITLE>Godzilla:</TITLE>' +
+										'<GENRE>Science Fiction</GENRE>' +
+										'<DIRECTOR>Gareth Edwards</DIRECTOR>' +
+										'<RUNNING-TIME> 123 MINUTES</RUNNING-TIME>' +
+										'<YEAR>2014</YEAR>' +
+									'</MOVIE>' +
+							
+							
+								'</FAVMOVIES>';
+            
+            var tbData = "";
+            var xmlData = StringToXMLDom(XMLArray);
+            
+            if (XMLArray) {
+                var tmp = xmlData.getElementsByTagName("MOVIE");
+                
+                for (var i = 0; i < tmp.length; i++) {
+                    for (var j = 0; j < tmp[i].childNodes.length; j++) {
+                            tbData += tmp[i].childNodes[j].tagName + " : "
+                                    + tmp[i].childNodes[j].textContent + "<br />";
+                        }
+                        
+                        tbData += "<br />";
+                    }
+                
+                document.getElementById("demo").innerHTML = tbData;
+            } else {
+                document.getElementById("demo").innerHTML = "Error!";
+            }
+			}
+        </script>
+		
+  
+  
+  
+ 
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Subscribe To Our Newsletter</h2>
+		
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter Name" />
+          <small>Error message</small>
+        </div>
+		
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" />
+          <small>Error message</small>
+        </div>
+		
+		<button id="submit" onclick="subscribe(this.form)">Subscribe </button>
+		
+		
+			
+		<script src="favorite movie/newsletter.js" ></script>
+		
+      </form>
+    </div>
+		
+		<footer> 
+			<div class="link">
+
+				<div class="logos">
+					<a href="editor/editor student4.html">slide into the editor's page</a>
+					<circle fill="currentColor" cx="56.1" cy="56.1" r="55">
+					<a href="#" class="fa fa-facebook "></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+					</circle>
+				 </div> 
+			</div>
+				 
+					
+    </footer>   
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="movie.css"?>
+
+<FAVMOVIES>
+	<TITLE> FAVOURITE MOVIES </TITLE>
+	<MOVIE>
+		<NAME>Extraction</NAME>
+		<GENRE>Action-Thriller</GENRE>
+		<DIRECTOR>Sam Hargrave</DIRECTOR>
+		<RUNNING-TIME> 117 minutes </RUNNING-TIME>
+		<YEAR>2020</YEAR>
+	</MOVIE>
+	
+	<MOVIE>
+		<NAME>Alone</NAME>
+		<GENRE>Horror</GENRE>
+		<DIRECTOR>Johnny Martin</DIRECTOR>
+		<RUNNING-TIME>92 minutes</RUNNING-TIME>
+		<YEAR>2020</YEAR>
+	</MOVIE>
+	
+	<MOVIE>
+		<NAME> K.G.F: Chapter 1</NAME>
+		<GENRE>Action</GENRE>
+		<DIRECTOR>Prashanth Neel</DIRECTOR>
+		<RUNNING-TIME>155 minutes</RUNNING-TIME>
+		<YEAR>2018</YEAR>
+	</MOVIE>
+	
+	<MOVIE>
+		<NAME>The Invisible Man</NAME>
+		<GENRE>Horror</GENRE>
+		<DIRECTOR>Leigh Whannelll</DIRECTOR>
+		<RUNNING-TIME>124 minutes</RUNNING-TIME>
+		<YEAR>2020</YEAR>
+	</MOVIE>
+	
+	<MOVIE>
+		<NAME>#Alive</NAME>
+		<GENRE>Horror</GENRE>
+		<DIRECTOR>Cho Il-hyung</DIRECTOR>
+		<RUNNING-TIME>99 minutes</RUNNING-TIME>
+		<YEAR>2020</YEAR>
+	</MOVIE>
+	
+	<MOVIE>
+		<NAME>6 Underground</NAME>
+		<GENRE>Action</GENRE>
+		<DIRECTOR>Michael Bay</DIRECTOR>
+		<RUNNING-TIME>128 minutes</RUNNING-TIME>
+		<YEAR>2019</YEAR>
+	</MOVIE>
+	
+	<MOVIE>
+		<NAME> Work It</NAME>
+		<GENRE>Comedy</GENRE>
+		<DIRECTOR>Laura Keys </DIRECTOR>
+		<RUNNING-TIME>93 minutes</RUNNING-TIME>
+		<YEAR>2020</YEAR>
+	</MOVIE>
+	
+	<MOVIE>
+		<NAME>Jumanji: The Next Level</NAME>
+		<GENRE>Adventure-Comedy</GENRE>
+		<DIRECTOR>Jake Kasdan</DIRECTOR>
+		<RUNNING-TIME>123 minutes</RUNNING-TIME>
+		<YEAR>2019</YEAR>
+	</MOVIE>
+	
+	<MOVIE>
+		<NAME>Guru</NAME>
+		<GENRE>Drama</GENRE>
+		<DIRECTOR>Mani Ratnam </DIRECTOR>
+		<RUNNING-TIME>162 minutes</RUNNING-TIME>
+		<YEAR>2007</YEAR>
+	</MOVIE>
+	
+	<MOVIE>
+		<NAME>Psycho</NAME>
+		<GENRE>Thriller</GENRE>
+		<DIRECTOR>Mysskin </DIRECTOR>
+		<RUNNING-TIME>144 minutes</RUNNING-TIME>
+		<YEAR>2020</YEAR>
+	</MOVIE>
+	
+		
+	<MOVIE>	
+		<NAME>Godzilla</NAME>
+		<GENRE>Science Fiction</GENRE>
+		<DIRECTOR>Gareth Edwards</DIRECTOR>
+		<RUNNING-TIME> 123 minutes</RUNNING-TIME>
+		<YEAR>2014</YEAR>
+	</MOVIE>
+
+	
+</FAVMOVIES>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+</head>
+
+<body id="coltext">
+  <form action="" name="themes" method="post">
+    <select name="colors" id="colors" onchange="color()">
+    <option value="FFFFFF" selected="select">White</option>
+    <option value="000000">Black</option>
+	<option value="FF0400">Red</option>
+    <option value="FFA500">Orange</option>
+	<option value="EFE800">Yellow</option>
+    <option value="05EF00">Green</option>
+    <option value="0206FF">Blue</option>
+	<option value="800000">Maroon</option>
+	<option value="FF00FF">Magenta</option>
+	<option value="00FFFF">Cyan</option>
+	<option value="808080">Gray</option>
+	<option value="2e8b57 ">Sea Green</option>
+	<option value="d2691e">Chocolate</option>
+	<option value="FFD700">Gold</option>
+	<option value="C0C0C0">Silver</option>
+    </select>
+  </form>
+  
+  <script>
+  function color() {
+      var color = document.getElementById("colors").value; // cached
+    document.bgColor = color;
+    }
+  </script>
+  
+  <script type="text/javascript">
+      function updateTextColour(value) {
+            document.body.style.color = '#' + value;
+         }
+  </script>
+  
+  <form>
+            <select name="backGround" size="1" onChange="updateTextColour(this.value)">
+                <option value="000000">Black</option>
+                <option value="FF0400">Red</option>
+				<option value="FFA500">Orange</option>
+                <option value="EFE800">Yellow</option>
+                <option value="05EF00">Green</option>
+                <option value="0206FF">Blue</option>
+				<option value="800000">Maroon</option>
+				<option value="FF00FF">Magenta</option>
+				<option value="00FFFF">Cyan</option>
+				<option value="808080">Gray</option>
+				<option value="2e8b57 ">Sea Green</option>
+				<option value="d2691e">Chocolate</option>
+				<option value="FFD700">Gold</option>
+				<option value="C0C0C0">Silver</option>
+                <option value="FFFFFF" selected>White</option>
+            </select>
+        </form>
+   
+</body>
+</html>
